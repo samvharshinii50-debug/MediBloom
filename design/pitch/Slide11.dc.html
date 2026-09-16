@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .app { font-family: 'Nunito', system-ui, sans-serif; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+  </style>
+</helmet>
+
+<div class="app" style="width:1280px; height:720px; background:#FDF8F6; position:relative; overflow:hidden; padding:36px 64px;">
+
+  <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; position:relative;">
+    <div style="display:flex; align-items:center; gap:8px;">
+      <svg width="24" height="24" viewBox="0 0 40 40"><g transform="translate(20,20)"><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#E85D8A" opacity="0.9"></ellipse><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#F4A6C1" opacity="0.85" transform="rotate(60)"></ellipse><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#8B5FBF" opacity="0.9" transform="rotate(120)"></ellipse><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#C9B6E4" opacity="0.85" transform="rotate(180)"></ellipse><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#D4A574" opacity="0.85" transform="rotate(240)"></ellipse><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#E85D8A" opacity="0.8" transform="rotate(300)"></ellipse><circle cx="0" cy="0" r="6.5" fill="white"></circle><rect x="-4" y="-1.4" width="8" height="2.8" rx="1.4" fill="#8B5FBF" transform="rotate(45)"></rect></g></svg>
+      <span style="font-size:12.5px; font-weight:800; color:#8B5FBF; letter-spacing:0.03em;">MediBloom</span>
+    </div>
+    <div style="font-size:11.5px; font-weight:800; color:#A79FB0; letter-spacing:0.06em; text-transform:uppercase; background:#F6F2FB; padding:6px 14px; border-radius:999px;">Appendix &middot; Accessibility</div>
+  </div>
+
+  <div class="serif" style="font-size:38px; color:#2D2438; position:relative;">Designed with elderly users in mind</div>
+  <div style="font-size:14px; color:#6B6377; font-weight:600; margin-top:6px; margin-bottom:22px; position:relative;">Every challenge below maps to a specific, already-designed feature.</div>
+
+  <div style="display:flex; flex-direction:column; gap:9px; position:relative;">
+
+    <div style="display:grid; grid-template-columns:1fr 24px 1.3fr; align-items:center; gap:14px; background:#FFFFFF; border:1px solid #F3EDF8; border-radius:14px; padding:13px 18px;">
+      <div style="font-size:13px; color:#A15252; font-weight:700;">Small text is hard to read</div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9CDE4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+      <div style="font-size:13px; color:#2D2438; font-weight:800;">Larger-text &amp; high-contrast mode</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 24px 1.3fr; align-items:center; gap:14px; background:#FFFFFF; border:1px solid #F3EDF8; border-radius:14px; padding:13px 18px;">
+      <div style="font-size:13px; color:#A15252; font-weight:700;">Tiny buttons are hard to tap</div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9CDE4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+      <div style="font-size:13px; color:#2D2438; font-weight:800;">Every button &ge;44px, one-tap Mark Taken / Snooze / Skip</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 24px 1.3fr; align-items:center; gap:14px; background:#FFFFFF; border:1px solid #F3EDF8; border-radius:14px; padding:13px 18px;">
+      <div style="font-size:13px; color:#A15252; font-weight:700;">Not sure what a notification means</div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9CDE4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+      <div style="font-size:13px; color:#2D2438; font-weight:800;">Optional voice read-aloud &mdash; says the medicine name &amp; dose out loud</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 24px 1.3fr; align-items:center; gap:14px; background:#FFFFFF; border:1px solid #F3EDF8; border-radius:14px; padding:13px 18px;">
+      <div style="font-size:13px; color:#A15252; font-weight:700;">Typing medicine names is tedious</div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9CDE4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+      <div style="font-size:13px; color:#2D2438; font-weight:800;">Autocomplete on generic &amp; brand names, minimal typing</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 24px 1.3fr; align-items:center; gap:14px; background:#FFFFFF; border:1px solid #F3EDF8; border-radius:14px; padding:13px 18px;">
+      <div style="font-size:13px; color:#A15252; font-weight:700;">Living alone &mdash; a missed dose goes unnoticed</div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9CDE4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+      <div style="font-size:13px; color:#2D2438; font-weight:800;">Optional Caregiver Alert &mdash; a family member is notified if a dose is missed</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 24px 1.3fr; align-items:center; gap:14px; background:#FFFFFF; border:1px solid #F3EDF8; border-radius:14px; padding:13px 18px;">
+      <div style="font-size:13px; color:#A15252; font-weight:700;">Unfamiliar with apps &amp; medical jargon</div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9CDE4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+      <div style="font-size:13px; color:#2D2438; font-weight:800;">Plain language everywhere, single-screen flows, no accounts or passwords</div>
+    </div>
+
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .app { font-family: 'Nunito', system-ui, sans-serif; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    .nav-item { transition: background .15s ease; text-decoration: none; }
+    .nav-item:hover { background: #F6F2FB; }
+    ::-webkit-scrollbar { width: 10px; } ::-webkit-scrollbar-thumb { background: #E7DEEF; border-radius: 8px; } ::-webkit-scrollbar-track { background: transparent; }
+  </style>
+</helmet>
+
+<div class="app" style="width:1280px; height:1060px; display:flex; background:#FDF8F6; overflow:hidden;">
+
+  <!-- SIDEBAR -->
+  <div style="width:264px; min-width:264px; height:100%; background:#FFFFFF; border-right:1px solid #F0E9F5; display:flex; flex-direction:column; padding:24px 18px;">
+    <div style="display:flex; align-items:center; gap:10px; padding:0 8px 22px 8px;">
+      <svg width="38" height="38" viewBox="0 0 40 40" style="flex-shrink:0;">
+        <g transform="translate(20,20)">
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#E85D8A" opacity="0.9"></ellipse>
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#F4A6C1" opacity="0.85" transform="rotate(60)"></ellipse>
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#8B5FBF" opacity="0.9" transform="rotate(120)"></ellipse>
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#C9B6E4" opacity="0.85" transform="rotate(180)"></ellipse>
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#D4A574" opacity="0.85" transform="rotate(240)"></ellipse>
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#E85D8A" opacity="0.8" transform="rotate(300)"></ellipse>
+          <circle cx="0" cy="0" r="6.5" fill="white"></circle>
+          <rect x="-4" y="-1.4" width="8" height="2.8" rx="1.4" fill="#8B5FBF" transform="rotate(45)"></rect>
+        </g>
+      </svg>
+      <div>
+        <div class="serif" style="font-size:20px; color:#2D2438; line-height:1;">MediBloom</div>
+        <div style="font-size:10px; letter-spacing:0.06em; text-transform:uppercase; color:#A79FB0; margin-top:4px; font-weight:700;">care that remembers</div>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:3px; flex:1;">
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"></path><path d="M6 10v9a1 1 0 0 0 1 1h4v-6h2v6h4a1 1 0 0 0 1-1v-9"></path></svg>
+        Dashboard
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" transform="rotate(45 12 12)"><rect x="3" y="9" width="18" height="6" rx="3"></rect><line x1="12" y1="9" x2="12" y2="15"></line></svg>
+        Medications
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px; position:relative;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 20h20L12 4z"></path><line x1="12" y1="10" x2="12" y2="14.5"></line></svg>
+        Interactions
+        <span style="margin-left:auto; width:7px; height:7px; border-radius:50%; background:#F17C7C;"></span>
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21c9 0 14-5 14-14a1 1 0 0 0-1-1C9 6 5 11 5 20a1 1 0 0 0 0 1z"></path><path d="M5 21c3-6 6-9 12-12"></path></svg>
+        Wellness
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="20" x2="5" y2="12"></line><line x1="12" y1="20" x2="12" y2="6"></line><line x1="19" y1="20" x2="19" y2="15"></line></svg>
+        Adherence
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-4 4v-4H6a2 2 0 0 1-2-2V6z"></path></svg>
+        Assistant
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 13a7.97 7.97 0 0 0 0-2l2.1-1.6-2-3.4-2.5 1a8 8 0 0 0-1.7-1L14.9 3h-4l-.4 2.9a8 8 0 0 0-1.7 1l-2.5-1-2 3.4L6.4 11a8 8 0 0 0 0 2l-2.1 1.6 2 3.4 2.5-1c.5.4 1.1.8 1.7 1l.4 2.9h4l.4-2.9c.6-.2 1.2-.6 1.7-1l2.5 1 2-3.4L19.4 13z"></path></svg>
+        Settings
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; background:#FCE8EE; color:#E85D8A; font-weight:800; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>
+        Safety &amp; Ethics
+      </a>
+    </div>
+    <div style="display:flex; align-items:center; gap:10px; padding:11px 10px; border-radius:14px; background:#F6F2FB;">
+      <div style="width:32px; height:32px; border-radius:50%; background:linear-gradient(135deg,#C9B6E4,#F4A6C1); display:flex; align-items:center; justify-content:center; color:#FFFFFF; font-weight:800; font-size:13px;">A</div>
+      <div>
+        <div style="font-size:12.5px; font-weight:800; color:#2D2438;">Ananya Rao</div>
+        <div style="font-size:10.5px; color:#A79FB0; font-weight:700;">Just for you &middot; no account needed</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div style="flex:1; height:100%; overflow:auto; padding:36px 42px;">
+    <div class="serif" style="font-size:30px; color:#2D2438;">Safety &amp; Ethics</div>
+    <div style="font-size:14px; color:#6B6377; margin-bottom:26px; font-weight:600;">Your wellbeing comes before any feature. Here's exactly how MediBloom handles it.</div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
+
+      <div style="background:#FFFFFF; border-radius:22px; padding:24px; border:1px solid #F3EDF8;">
+        <div style="width:44px; height:44px; border-radius:14px; background:#FCE8EE; display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#E85D8A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z"></path></svg>
+        </div>
+        <div style="font-size:15.5px; font-weight:800; color:#2D2438; margin-bottom:8px;">Not a substitute</div>
+        <div style="font-size:13px; color:#6B6377; line-height:1.6; font-weight:600;">MediBloom helps you remember your medicines and flags risky combinations. It does not diagnose or prescribe &mdash; always check with your doctor or pharmacist first.</div>
+      </div>
+
+      <div style="background:#FFFFFF; border-radius:22px; padding:24px; border:1px solid #F3EDF8;">
+        <div style="width:44px; height:44px; border-radius:14px; background:#F1EBF8; display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#8B5FBF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>
+        </div>
+        <div style="font-size:15.5px; font-weight:800; color:#2D2438; margin-bottom:8px;">Your data stays here</div>
+        <div style="font-size:13px; color:#6B6377; line-height:1.6; font-weight:600;">Everything lives on this device. Nothing is sent out unless you turn on Email or Telegram reminders &mdash; and even then, only using your own account.</div>
+      </div>
+
+      <div style="background:#FFFFFF; border-radius:22px; padding:24px; border:1px solid #F3EDF8;">
+        <div style="width:44px; height:44px; border-radius:14px; background:#FDEBEB; display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#F17C7C" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h4l1 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 1v4a2 2 0 0 1-2 2C10.5 20 4 13.5 4 5a2 2 0 0 1 2-2z"></path></svg>
+        </div>
+        <div style="font-size:15.5px; font-weight:800; color:#2D2438; margin-bottom:8px;">In an emergency</div>
+        <div style="font-size:13px; color:#6B6377; line-height:1.6; font-weight:600;">If you or someone else is having a medical emergency, call your local emergency number or the nearest hospital right away &mdash; don't wait on an app.</div>
+      </div>
+
+      <div style="background:#FFFFFF; border-radius:22px; padding:24px; border:1px solid #F3EDF8;">
+        <div style="width:44px; height:44px; border-radius:14px; background:#F7EEE3; display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="#D4A574" stroke="none"><path d="M12 3l1.5 5L19 9.5 13.5 11 12 16l-1.5-5L5 9.5 10.5 8 12 3z"></path></svg>
+        </div>
+        <div style="font-size:15.5px; font-weight:800; color:#2D2438; margin-bottom:8px;">How insights are made</div>
+        <div style="font-size:13px; color:#6B6377; line-height:1.6; font-weight:600;">"Today's Insight" and the chat assistant use clear rules on your own history &mdash; not a mystery AI, and nothing leaves your device to generate them.</div>
+      </div>
+
+      <div style="background:#FFFFFF; border-radius:22px; padding:24px; border:1px solid #F3EDF8;">
+        <div style="width:44px; height:44px; border-radius:14px; background:#E8F7F0; display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#4EA37D" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 20h20L12 4z"></path><line x1="12" y1="10" x2="12" y2="14.5"></line></svg>
+        </div>
+        <div style="font-size:15.5px; font-weight:800; color:#2D2438; margin-bottom:8px;">Checked automatically</div>
+        <div style="font-size:13px; color:#6B6377; line-height:1.6; font-weight:600;">Every time you add a medicine, we check it against everything else you take right away &mdash; you never have to remember to ask.</div>
+      </div>
+
+      <div style="background:#FFFFFF; border-radius:22px; padding:24px; border:1px solid #F3EDF8;">
+        <div style="width:44px; height:44px; border-radius:14px; background:#F1EBF8; display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#8B5FBF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"></circle><path d="M2 21c0-4 3-6 7-6s7 2 7 6"></path><circle cx="17" cy="8" r="2.4"></circle><path d="M22 21c0-3-1.8-5-4-5.5"></path></svg>
+        </div>
+        <div style="font-size:15.5px; font-weight:800; color:#2D2438; margin-bottom:8px;">Built for everyone</div>
+        <div style="font-size:13px; color:#6B6377; line-height:1.6; font-weight:600;">Simple language, a larger-text option, and it works fully offline &mdash; easy to use on any device, anywhere.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .app { font-family: 'Nunito', system-ui, sans-serif; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    .nav-item { transition: background .15s ease; text-decoration: none; }
+    .nav-item:hover { background: #F6F2FB; }
+    .chip { transition: background .15s ease, transform .12s ease; cursor:pointer; }
+    .chip:hover { background:#F1EBF8; transform:translateY(-1px); }
+    input { font-family: 'Nunito', sans-serif; outline:none; }
+    ::-webkit-scrollbar { width: 10px; } ::-webkit-scrollbar-thumb { background: #E7DEEF; border-radius: 8px; } ::-webkit-scrollbar-track { background: transparent; }
+  </style>
+</helmet>
+
+<div class="app" style="width:1280px; height:920px; display:flex; background:#FDF8F6; overflow:hidden;">
+
+  <!-- SIDEBAR -->
+  <div style="width:264px; min-width:264px; height:100%; background:#FFFFFF; border-right:1px solid #F0E9F5; display:flex; flex-direction:column; padding:24px 18px;">
+    <div style="display:flex; align-items:center; gap:10px; padding:0 8px 22px 8px;">
+      <svg width="38" height="38" viewBox="0 0 40 40" style="flex-shrink:0;">
+        <g transform="translate(20,20)">
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#E85D8A" opacity="0.9"></ellipse>
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#F4A6C1" opacity="0.85" transform="rotate(60)"></ellipse>
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#8B5FBF" opacity="0.9" transform="rotate(120)"></ellipse>
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#C9B6E4" opacity="0.85" transform="rotate(180)"></ellipse>
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#D4A574" opacity="0.85" transform="rotate(240)"></ellipse>
+          <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#E85D8A" opacity="0.8" transform="rotate(300)"></ellipse>
+          <circle cx="0" cy="0" r="6.5" fill="white"></circle>
+          <rect x="-4" y="-1.4" width="8" height="2.8" rx="1.4" fill="#8B5FBF" transform="rotate(45)"></rect>
+        </g>
+      </svg>
+      <div>
+        <div class="serif" style="font-size:20px; color:#2D2438; line-height:1;">MediBloom</div>
+        <div style="font-size:10px; letter-spacing:0.06em; text-transform:uppercase; color:#A79FB0; margin-top:4px; font-weight:700;">care that remembers</div>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:3px; flex:1;">
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"></path><path d="M6 10v9a1 1 0 0 0 1 1h4v-6h2v6h4a1 1 0 0 0 1-1v-9"></path></svg>
+        Dashboard
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" transform="rotate(45 12 12)"><rect x="3" y="9" width="18" height="6" rx="3"></rect><line x1="12" y1="9" x2="12" y2="15"></line></svg>
+        Medications
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px; position:relative;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 20h20L12 4z"></path><line x1="12" y1="10" x2="12" y2="14.5"></line></svg>
+        Interactions
+        <span style="margin-left:auto; width:7px; height:7px; border-radius:50%; background:#F17C7C;"></span>
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21c9 0 14-5 14-14a1 1 0 0 0-1-1C9 6 5 11 5 20a1 1 0 0 0 0 1z"></path><path d="M5 21c3-6 6-9 12-12"></path></svg>
+        Wellness
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="20" x2="5" y2="12"></line><line x1="12" y1="20" x2="12" y2="6"></line><line x1="19" y1="20" x2="19" y2="15"></line></svg>
+        Adherence
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; background:#FCE8EE; color:#E85D8A; font-weight:800; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-4 4v-4H6a2 2 0 0 1-2-2V6z"></path></svg>
+        Assistant
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 13a7.97 7.97 0 0 0 0-2l2.1-1.6-2-3.4-2.5 1a8 8 0 0 0-1.7-1L14.9 3h-4l-.4 2.9a8 8 0 0 0-1.7 1l-2.5-1-2 3.4L6.4 11a8 8 0 0 0 0 2l-2.1 1.6 2 3.4 2.5-1c.5.4 1.1.8 1.7 1l.4 2.9h4l.4-2.9c.6-.2 1.2-.6 1.7-1l2.5 1 2-3.4L19.4 13z"></path></svg>
+        Settings
+      </a>
+      <a class="nav-item" style="display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:12px; color:#6B6377; font-weight:700; font-size:13.5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>
+        Safety &amp; Ethics
+      </a>
+    </div>
+    <div style="display:flex; align-items:center; gap:10px; padding:11px 10px; border-radius:14px; background:#F6F2FB;">
+      <div style="width:32px; height:32px; border-radius:50%; background:linear-gradient(135deg,#C9B6E4,#F4A6C1); display:flex; align-items:center; justify-content:center; color:#FFFFFF; font-weight:800; font-size:13px;">A</div>
+      <div>
+        <div style="font-size:12.5px; font-weight:800; color:#2D2438;">Ananya Rao</div>
+        <div style="font-size:10.5px; color:#A79FB0; font-weight:700;">Just for you &middot; no account needed</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div style="flex:1; height:100%; display:flex; flex-direction:column;">
+
+    <div style="padding:28px 40px 16px 40px; border-bottom:1px solid #F0E9F5; display:flex; align-items:center; gap:12px;">
+      <div style="width:42px; height:42px; border-radius:13px; background:linear-gradient(135deg,#E85D8A,#8B5FBF); display:flex; align-items:center; justify-content:center;">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-4 4v-4H6a2 2 0 0 1-2-2V6z"></path></svg>
+      </div>
+      <div>
+        <div class="serif" style="font-size:21px; color:#2D2438;">Ask MediBloom</div>
+        <div style="font-size:12px; color:#A79FB0; font-weight:700;">Answers from your own data &amp; a built-in medicine reference &mdash; runs fully offline</div>
+      </div>
+    </div>
+
+    <!-- chat log -->
+    <div style="flex:1; overflow:auto; padding:28px 40px; display:flex; flex-direction:column; gap:18px;">
+
+      <div style="display:flex; gap:12px; max-width:640px;">
+        <div style="width:32px; height:32px; border-radius:50%; background:linear-gradient(135deg,#E85D8A,#8B5FBF); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#FFFFFF" stroke="none"><path d="M12 3l1.5 5L19 9.5 13.5 11 12 16l-1.5-5L5 9.5 10.5 8 12 3z"></path></svg>
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #F3EDF8; border-radius:18px; padding:14px 18px; font-size:14px; color:#2D2438; line-height:1.6; font-weight:600;">
+          Hi Ananya! Ask me anything about your medicines &mdash; interactions, timing, or what your adherence numbers mean.
+        </div>
+      </div>
+
+      <div style="display:flex; gap:12px; max-width:640px; margin-left:auto; flex-direction:row-reverse;">
+        <div style="background:linear-gradient(135deg,#E85D8A,#8B5FBF); border-radius:18px; padding:14px 18px; font-size:14px; color:white; line-height:1.6; font-weight:700;">
+          Can I take Ibuprofen with my Warfarin?
+        </div>
+      </div>
+
+      <div style="display:flex; gap:12px; max-width:680px;">
+        <div style="width:32px; height:32px; border-radius:50%; background:linear-gradient(135deg,#E85D8A,#8B5FBF); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#FFFFFF" stroke="none"><path d="M12 3l1.5 5L19 9.5 13.5 11 12 16l-1.5-5L5 9.5 10.5 8 12 3z"></path></svg>
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #F3EDF8; border-radius:18px; padding:14px 18px; font-size:14px; color:#2D2438; line-height:1.65; font-weight:600;">
+          I'd be careful there &mdash; that's a <span style="color:#F17C7C; font-weight:800;">severe</span> combo. Taking them together raises your bleeding risk a lot.
+          <div style="margin-top:10px; display:flex; align-items:center; gap:10px; background:#FDF9F5; border-radius:12px; padding:10px 14px;">
+            <span style="font-size:12.5px; padding:6px 12px; border-radius:999px; background:#FDEBEB; color:#C0504E; font-weight:800;">Ibuprofen</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D4A574" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+            <span style="font-size:12.5px; padding:6px 12px; border-radius:999px; background:#E8F7F0; color:#3F9270; font-weight:800;">Acetaminophen</span>
+            <span style="font-size:12px; color:#6B6377; font-weight:700;">safer for pain relief on Warfarin</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:12px; max-width:640px; margin-left:auto; flex-direction:row-reverse;">
+        <div style="background:linear-gradient(135deg,#E85D8A,#8B5FBF); border-radius:18px; padding:14px 18px; font-size:14px; color:white; line-height:1.6; font-weight:700;">
+          What does my 91% adherence score actually mean?
+        </div>
+      </div>
+
+      <div style="display:flex; gap:12px; max-width:680px;">
+        <div style="width:32px; height:32px; border-radius:50%; background:linear-gradient(135deg,#E85D8A,#8B5FBF); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#FFFFFF" stroke="none"><path d="M12 3l1.5 5L19 9.5 13.5 11 12 16l-1.5-5L5 9.5 10.5 8 12 3z"></path></svg>
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #F3EDF8; border-radius:18px; padding:14px 18px; font-size:14px; color:#2D2438; line-height:1.65; font-weight:600;">
+          You've taken 27 of your 30 scheduled doses this week on time &mdash; that's 91%, which is great. Your evening doses are the ones that slip most often.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- suggestion chips + input -->
+    <div style="padding:16px 40px 26px 40px; border-top:1px solid #F0E9F5;">
+      <div style="display:flex; gap:10px; margin-bottom:14px; flex-wrap:wrap;">
+        <div class="chip" style="padding:9px 16px; border-radius:999px; background:#F6F2FB; color:#6B6377; font-size:12.5px; font-weight:700;">Explain this interaction</div>
+        <div class="chip" style="padding:9px 16px; border-radius:999px; background:#F6F2FB; color:#6B6377; font-size:12.5px; font-weight:700;">What if I missed a dose?</div>
+        <div class="chip" style="padding:9px 16px; border-radius:999px; background:#F6F2FB; color:#6B6377; font-size:12.5px; font-weight:700;">Show my weekly trend</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px; background:#FBF9FC; border:1.5px solid #EDE6F2; border-radius:16px; padding:6px 8px 6px 18px;">
+        <input type="text" placeholder="Ask about your medicines..." style="flex:1; border:none; background:transparent; font-size:14px; color:#2D2438; padding:10px 0;">
+        <button style="width:40px; height:40px; border-radius:12px; border:none; background:linear-gradient(135deg,#E85D8A,#8B5FBF); display:flex; align-items:center; justify-content:center; cursor:pointer;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

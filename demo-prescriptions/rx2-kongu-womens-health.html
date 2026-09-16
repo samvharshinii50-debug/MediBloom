@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: 8.27in 11.69in; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; color:#1a1a1a; }
+  .page { width:794px; height:1123px; padding:48px 56px; position:relative; }
+  .hdr { border-bottom:3px solid #8B2F62; padding-bottom:16px; display:flex;
+          justify-content:space-between; align-items:flex-start; }
+  .hosp { font-size:25px; font-weight:700; color:#8B2F62; letter-spacing:-0.3px; }
+  .sub { font-size:12px; color:#555; margin-top:4px; }
+  .doc { text-align:right; font-size:12.5px; line-height:1.6; }
+  .docname { font-size:15px; font-weight:700; color:#1a1a1a; }
+  .meta { display:flex; gap:36px; margin:26px 0 8px 0; font-size:13px; flex-wrap:wrap; }
+  .meta div span { color:#666; }
+  .rxsym { font-size:40px; font-weight:700; color:#8B2F62; font-family:Georgia,serif;
+            margin:18px 0 6px 0; }
+  table { width:100%; border-collapse:collapse; font-size:13.5px; }
+  th { background:#F3EAEF; text-align:left; padding:10px 12px; font-size:12px;
+        color:#8B2F62; border:1px solid #CBDDE8; }
+  td { padding:11px 12px; border:1px solid #DFE7EC; }
+  .notes { margin-top:26px; font-size:13px; line-height:1.75; }
+  .notes b { color:#8B2F62; }
+  .sign { position:absolute; bottom:120px; right:56px; text-align:center; }
+  .signline { width:190px; border-top:1px solid #333; margin-top:44px; padding-top:6px;
+               font-size:12px; }
+  .foot { position:absolute; bottom:40px; left:56px; right:56px; border-top:1px solid #ddd;
+           padding-top:12px; font-size:10.5px; color:#888; display:flex;
+           justify-content:space-between; }
+  .demo { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-24deg);
+           font-size:62px; font-weight:800; color:rgba(200,30,30,0.07); letter-spacing:4px;
+           white-space:nowrap; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="demo">SAMPLE &middot; DEMO ONLY</div>
+
+  <div class="hdr">
+    <div>
+      <div class="hosp">Kongu Women&rsquo;s Clinic</div>
+      <div class="sub">Obstetrics &amp; Gynaecology &middot; 18 Mettupalayam Road, Coimbatore 641043</div>
+      <div class="sub">Ph: 0422-233-9910 &middot; care@konguwomens-demo.example</div>
+    </div>
+    <div class="doc">
+      <div class="docname">Dr. Anitha Selvaraj</div>
+      <div>MBBS, MS (Obstetrics &amp; Gynaecology)</div>
+      <div>Reg. No. DEMO-TN-31556</div>
+    </div>
+  </div>
+
+  <div class="meta">
+    <div><span>Patient:</span> <b>Divya Ramesh</b></div>
+    <div><span>Age/Sex:</span> <b>34 / F</b></div>
+    <div><span>Date:</span> <b>16 September 2026</b></div>
+    <div><span>OPD No:</span> <b>KWC-7734</b></div>
+  </div>
+  <div style="font-size:13px; margin-bottom:6px;">
+    <span style="color:#666;">Diagnosis:</span> <b>Heavy menstrual bleeding &middot; Iron deficiency anaemia (Hb 9.1)</b>
+  </div>
+
+  <div class="rxsym">&#8478;</div>
+
+  <table>
+    <tr>
+      <th style="width:38%">Medicine</th><th style="width:16%">Strength</th>
+      <th style="width:26%">Frequency</th><th style="width:20%">Duration</th>
+    </tr>
+    <tr><td>Tab. Trapic MF</td><td>500 mg</td><td>Thrice daily &mdash; during periods</td><td>5 days</td></tr>
+    <tr><td>Tab. Meftal Spas</td><td>250 mg</td><td>As needed for cramps</td><td>SOS</td></tr>
+    <tr><td>Tab. Livogen</td><td>100 mg</td><td>Once daily &mdash; after lunch</td><td>3 months</td></tr>
+    <tr><td>Tab. Folvite</td><td>5 mg</td><td>Once daily &mdash; morning</td><td>3 months</td></tr>
+  </table>
+
+  <div class="notes"><b>Advice:</b><br>&bull; Take iron with lemon juice or orange, not with tea, coffee or milk.<br>&bull; Iron and calcium must be at least four hours apart.<br>&bull; Repeat haemoglobin after 8 weeks.<br>&bull; Return sooner if bleeding soaks more than one pad an hour.</div>
+
+  <div class="sign">
+    <div class="signline">Dr. Anitha Selvaraj</div>
+  </div>
+
+  <div class="foot">
+    <div>NOT A REAL MEDICAL DOCUMENT &middot; generated for a software demo</div>
+    <div>KWC-7734</div>
+  </div>
+</div>
+</body>
+</html>

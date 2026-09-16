@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .app { font-family: 'Nunito', system-ui, sans-serif; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    input { font-family: 'Nunito', sans-serif; outline: none; }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+</helmet>
+
+<div class="app" style="width:390px; height:844px; background:#FDF8F6; position:relative; overflow:hidden; display:flex; flex-direction:column;">
+
+  <div style="display:flex; align-items:center; gap:10px; padding:18px 20px 12px 20px;">
+    <div style="width:36px; height:36px; border-radius:11px; background:linear-gradient(135deg,#E85D8A,#8B5FBF); display:flex; align-items:center; justify-content:center;">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-4 4v-4H6a2 2 0 0 1-2-2V6z"></path></svg>
+    </div>
+    <div>
+      <div class="serif" style="font-size:18px; color:#2D2438;">Ask MediBloom</div>
+      <div style="font-size:10.5px; color:#A79FB0; font-weight:700;">Fully offline &middot; your data only</div>
+    </div>
+  </div>
+
+  <div style="flex:1; overflow:auto; padding:6px 18px; display:flex; flex-direction:column; gap:12px;">
+
+    <div style="display:flex; gap:9px; max-width:88%;">
+      <div style="width:26px; height:26px; border-radius:50%; background:linear-gradient(135deg,#E85D8A,#8B5FBF); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="white" stroke="none"><path d="M12 3l1.5 5L19 9.5 13.5 11 12 16l-1.5-5L5 9.5 10.5 8 12 3z"></path></svg>
+      </div>
+      <div style="background:#FFFFFF; border:1px solid #F3EDF8; border-radius:15px; padding:11px 14px; font-size:12.5px; color:#2D2438; line-height:1.5; font-weight:600;">
+        Hi Ananya! Ask me anything about your medicines.
+      </div>
+    </div>
+
+    <div style="display:flex; max-width:82%; margin-left:auto;">
+      <div style="background:linear-gradient(135deg,#E85D8A,#8B5FBF); border-radius:15px; padding:11px 14px; font-size:12.5px; color:white; font-weight:700; line-height:1.5;">
+        Can I take Ibuprofen with Warfarin?
+      </div>
+    </div>
+
+    <div style="display:flex; gap:9px; max-width:90%;">
+      <div style="width:26px; height:26px; border-radius:50%; background:linear-gradient(135deg,#E85D8A,#8B5FBF); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="white" stroke="none"><path d="M12 3l1.5 5L19 9.5 13.5 11 12 16l-1.5-5L5 9.5 10.5 8 12 3z"></path></svg>
+      </div>
+      <div style="background:#FFFFFF; border:1px solid #F3EDF8; border-radius:15px; padding:11px 14px; font-size:12.5px; color:#2D2438; line-height:1.55; font-weight:600;">
+        I'd be careful &mdash; that's a <span style="color:#F17C7C; font-weight:800;">severe</span> combo, it raises bleeding risk a lot. Ask your pharmacist about acetaminophen instead.
+      </div>
+    </div>
+
+  </div>
+
+  <div style="padding:10px 18px 12px 18px;">
+    <div style="display:flex; gap:7px; margin-bottom:10px; overflow-x:auto;">
+      <div style="padding:7px 13px; border-radius:999px; background:#F6F2FB; color:#6B6377; font-size:11px; font-weight:700; white-space:nowrap; flex-shrink:0;">Explain this</div>
+      <div style="padding:7px 13px; border-radius:999px; background:#F6F2FB; color:#6B6377; font-size:11px; font-weight:700; white-space:nowrap; flex-shrink:0;">Missed a dose?</div>
+    </div>
+    <div style="display:flex; align-items:center; gap:8px; background:#FBF9FC; border:1.5px solid #EDE6F2; border-radius:16px; padding:5px 6px 5px 15px;">
+      <input type="text" placeholder="Ask about your medicines..." style="flex:1; border:none; background:transparent; font-size:13px; color:#2D2438; padding:9px 0;">
+      <div style="width:36px; height:36px; border-radius:11px; background:linear-gradient(135deg,#E85D8A,#8B5FBF); display:flex; align-items:center; justify-content:center;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- bottom nav -->
+  <div style="display:flex; align-items:center; justify-content:space-around; background:#FFFFFF; border-top:1px solid #F0E9F5; padding:10px 8px 16px 8px;">
+    <div style="display:flex; flex-direction:column; align-items:center; gap:3px;">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#A79FB0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"></path><path d="M6 10v9a1 1 0 0 0 1 1h4v-6h2v6h4a1 1 0 0 0 1-1v-9"></path></svg>
+      <span style="font-size:10px; font-weight:700; color:#A79FB0;">Home</span>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:3px;">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#A79FB0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" transform="rotate(45 12 12)"><rect x="3" y="9" width="18" height="6" rx="3"></rect><line x1="12" y1="9" x2="12" y2="15"></line></svg>
+      <span style="font-size:10px; font-weight:700; color:#A79FB0;">Medicines</span>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:3px;">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#E85D8A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-4 4v-4H6a2 2 0 0 1-2-2V6z"></path></svg>
+      <span style="font-size:10px; font-weight:800; color:#E85D8A;">Assistant</span>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:3px;">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#A79FB0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.4" fill="#A79FB0" stroke="none"></circle><circle cx="12" cy="12" r="1.4" fill="#A79FB0" stroke="none"></circle><circle cx="19" cy="12" r="1.4" fill="#A79FB0" stroke="none"></circle></svg>
+      <span style="font-size:10px; font-weight:700; color:#A79FB0;">More</span>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Blocks a commit that would put a credential into the repository.
+# Enable with:  git config core.hooksPath .githooks
+exec bash "$(dirname "$0")/../scripts/check-secrets.sh"

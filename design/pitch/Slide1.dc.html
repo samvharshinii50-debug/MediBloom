@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .app { font-family: 'Nunito', system-ui, sans-serif; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+  </style>
+</helmet>
+
+<div class="app" style="width:1280px; height:720px; background:#FDF8F6; position:relative; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 80px;">
+
+  <div style="position:absolute; top:-180px; right:-140px; width:520px; height:520px; border-radius:50%; background:radial-gradient(circle, rgba(139,95,191,0.12) 0%, rgba(139,95,191,0) 70%);"></div>
+  <div style="position:absolute; bottom:-220px; left:-100px; width:500px; height:500px; border-radius:50%; background:radial-gradient(circle, rgba(232,93,138,0.10) 0%, rgba(232,93,138,0) 70%);"></div>
+
+  <svg width="96" height="96" viewBox="0 0 40 40" style="margin-bottom:18px; position:relative;">
+    <g transform="translate(20,20)">
+      <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#E85D8A" opacity="0.9"></ellipse>
+      <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#F4A6C1" opacity="0.85" transform="rotate(60)"></ellipse>
+      <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#8B5FBF" opacity="0.9" transform="rotate(120)"></ellipse>
+      <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#C9B6E4" opacity="0.85" transform="rotate(180)"></ellipse>
+      <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#D4A574" opacity="0.85" transform="rotate(240)"></ellipse>
+      <ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#E85D8A" opacity="0.8" transform="rotate(300)"></ellipse>
+      <circle cx="0" cy="0" r="6.5" fill="white"></circle>
+      <rect x="-4" y="-1.4" width="8" height="2.8" rx="1.4" fill="#8B5FBF" transform="rotate(45)"></rect>
+    </g>
+  </svg>
+
+  <div class="serif" style="font-size:72px; color:#2D2438; position:relative; line-height:1;">MediBloom</div>
+  <div style="font-size:19px; font-weight:800; color:#8B5FBF; margin-top:14px; position:relative;">Your meds, remembered. Your safety, checked.</div>
+  <div style="font-size:14.5px; color:#6B6377; font-weight:600; margin-top:10px; max-width:640px; position:relative;">A medication adherence &amp; drug-interaction checker for Windows &mdash; built to actually get used, every single day.</div>
+
+  <div style="display:flex; gap:12px; margin-top:30px; position:relative;">
+    <div style="padding:9px 18px; border-radius:999px; background:#F1EBF8; color:#8B5FBF; font-size:12.5px; font-weight:800;">100% offline-first</div>
+    <div style="padding:9px 18px; border-radius:999px; background:#E8F7F0; color:#3F9270; font-size:12.5px; font-weight:800;">$0 to run, forever</div>
+    <div style="padding:9px 18px; border-radius:999px; background:#FCE8EE; color:#C2437C; font-size:12.5px; font-weight:800;">Private by default</div>
+  </div>
+
+  <div style="position:absolute; bottom:36px; font-size:12.5px; color:#A79FB0; font-weight:700;">[Your Team Name] &middot; [Hackathon Name, 2026]</div>
+</div>
+</x-dc>
+</body>
+</html>

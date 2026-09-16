@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: 8.27in 11.69in; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; color:#1a1a1a; }
+  .page { width:794px; height:1123px; padding:48px 56px; position:relative; }
+  .hdr { border-bottom:3px solid #3B3B6B; padding-bottom:16px; display:flex;
+          justify-content:space-between; align-items:flex-start; }
+  .hosp { font-size:25px; font-weight:700; color:#3B3B6B; letter-spacing:-0.3px; }
+  .sub { font-size:12px; color:#555; margin-top:4px; }
+  .doc { text-align:right; font-size:12.5px; line-height:1.6; }
+  .docname { font-size:15px; font-weight:700; color:#1a1a1a; }
+  .meta { display:flex; gap:36px; margin:26px 0 8px 0; font-size:13px; flex-wrap:wrap; }
+  .meta div span { color:#666; }
+  .rxsym { font-size:40px; font-weight:700; color:#3B3B6B; font-family:Georgia,serif;
+            margin:18px 0 6px 0; }
+  table { width:100%; border-collapse:collapse; font-size:13.5px; }
+  th { background:#EBEBF0; text-align:left; padding:10px 12px; font-size:12px;
+        color:#3B3B6B; border:1px solid #CBDDE8; }
+  td { padding:11px 12px; border:1px solid #DFE7EC; }
+  .notes { margin-top:26px; font-size:13px; line-height:1.75; }
+  .notes b { color:#3B3B6B; }
+  .sign { position:absolute; bottom:120px; right:56px; text-align:center; }
+  .signline { width:190px; border-top:1px solid #333; margin-top:44px; padding-top:6px;
+               font-size:12px; }
+  .foot { position:absolute; bottom:40px; left:56px; right:56px; border-top:1px solid #ddd;
+           padding-top:12px; font-size:10.5px; color:#888; display:flex;
+           justify-content:space-between; }
+  .demo { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-24deg);
+           font-size:62px; font-weight:800; color:rgba(200,30,30,0.07); letter-spacing:4px;
+           white-space:nowrap; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="demo">SAMPLE &middot; DEMO ONLY</div>
+
+  <div class="hdr">
+    <div>
+      <div class="hosp">Sri Lakshmi Family Clinic</div>
+      <div class="sub">Family Medicine &middot; 22 Bazaar Street, Thanjavur 613001</div>
+      <div class="sub">Ph: 04362-23-1180</div>
+    </div>
+    <div class="doc">
+      <div class="docname">Dr. S. Thirumalai</div>
+      <div>MBBS</div>
+      <div>Reg. No. DEMO-TN-19004</div>
+    </div>
+  </div>
+
+  <div class="meta">
+    <div><span>Patient:</span> <b>Rukmini Iyer</b></div>
+    <div><span>Age/Sex:</span> <b>66 / F</b></div>
+    <div><span>Date:</span> <b>16 September 2026</b></div>
+    <div><span>OPD No:</span> <b>SLF-882</b></div>
+  </div>
+  <div style="font-size:13px; margin-bottom:6px;">
+    <span style="color:#666;">Diagnosis:</span> <b>Seasonal allergic rhinitis &middot; Acidity</b>
+  </div>
+
+  <div class="rxsym">&#8478;</div>
+
+  <table>
+    <tr>
+      <th style="width:38%">Medicine</th><th style="width:16%">Strength</th>
+      <th style="width:26%">Frequency</th><th style="width:20%">Duration</th>
+    </tr>
+    <tr><td>Tab. Montek LC</td><td>10 mg</td><td>Once daily &mdash; night</td><td>10 days</td></tr>
+    <tr><td>Tab. Pan 40</td><td>40 mg</td><td>Once daily &mdash; before breakfast</td><td>10 days</td></tr>
+    <tr><td>Tab. Dolo 650</td><td>650 mg</td><td>If fever or body pain</td><td>SOS</td></tr>
+  </table>
+
+  <div class="notes"><b>Advice:</b><br>&bull; Steam inhalation twice a day.<br>&bull; Return if the cough lasts more than a week.</div>
+
+  <div class="sign">
+    <div class="signline">Dr. S. Thirumalai</div>
+  </div>
+
+  <div class="foot">
+    <div>NOT A REAL MEDICAL DOCUMENT &middot; generated for a software demo</div>
+    <div>SLF-882</div>
+  </div>
+</div>
+</body>
+</html>

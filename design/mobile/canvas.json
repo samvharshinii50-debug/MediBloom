@@ -1,0 +1,24 @@
+{
+  "artboards": [
+    { "file": "Home.dc.html", "x": 0, "y": 0, "w": 390, "h": 844, "title": "Home" },
+    { "file": "Medicines.dc.html", "x": 450, "y": 0, "w": 390, "h": 844, "title": "Medicines" },
+    { "file": "AddMedicine.dc.html", "x": 900, "y": 0, "w": 390, "h": 844, "title": "Add Medicine" },
+    { "file": "UploadPrescription.dc.html", "x": 1350, "y": 0, "w": 390, "h": 844, "title": "Upload Prescription" },
+    { "file": "ReviewExtracted.dc.html", "x": 0, "y": 944, "w": 390, "h": 844, "title": "Review Extracted" },
+    { "file": "Interactions.dc.html", "x": 450, "y": 944, "w": 390, "h": 844, "title": "Interactions" },
+    { "file": "Notification.dc.html", "x": 900, "y": 944, "w": 390, "h": 844, "title": "Reminder Notification" },
+    { "file": "Assistant.dc.html", "x": 1350, "y": 944, "w": 390, "h": 844, "title": "Assistant" },
+    { "file": "More.dc.html", "x": 0, "y": 1888, "w": 390, "h": 844, "title": "More" },
+    { "file": "Settings.dc.html", "x": 450, "y": 1888, "w": 390, "h": 844, "title": "Settings" },
+    { "file": "Wellness.dc.html", "x": 900, "y": 1888, "w": 390, "h": 844, "title": "Wellness" },
+    { "file": "Adherence.dc.html", "x": 1350, "y": 1888, "w": 390, "h": 844, "title": "Adherence" },
+    { "file": "SafetyEthics.dc.html", "x": 0, "y": 2832, "w": 390, "h": 844, "title": "Safety & Ethics" }
+  ],
+  "annotations": [
+    { "id": "note-row1", "x": 0, "y": -60, "w": 700, "text": "Main tabs: Home, Medicines, and the add/upload flow" },
+    { "id": "note-row2", "x": 0, "y": 884, "w": 700, "text": "Review flow, Interactions, the real Android notification, Assistant" },
+    { "id": "note-row3", "x": 0, "y": 1828, "w": 700, "text": "More menu and its screens" },
+    { "id": "note-row4", "x": 0, "y": 2772, "w": 700, "text": "Safety & Ethics" }
+  ],
+  "launch": { "view": "focused", "file": "Home.dc.html" }
+}

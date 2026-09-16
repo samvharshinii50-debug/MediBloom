@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .app { font-family: 'Nunito', system-ui, sans-serif; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+  </style>
+</helmet>
+
+<div class="app" style="width:1280px; height:720px; background:#FDF8F6; position:relative; overflow:hidden; padding:36px 64px;">
+
+  <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; position:relative;">
+    <div style="display:flex; align-items:center; gap:8px;">
+      <svg width="24" height="24" viewBox="0 0 40 40"><g transform="translate(20,20)"><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#E85D8A" opacity="0.9"></ellipse><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#F4A6C1" opacity="0.85" transform="rotate(60)"></ellipse><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#8B5FBF" opacity="0.9" transform="rotate(120)"></ellipse><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#C9B6E4" opacity="0.85" transform="rotate(180)"></ellipse><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#D4A574" opacity="0.85" transform="rotate(240)"></ellipse><ellipse cx="0" cy="-10" rx="5.5" ry="10" fill="#E85D8A" opacity="0.8" transform="rotate(300)"></ellipse><circle cx="0" cy="0" r="6.5" fill="white"></circle><rect x="-4" y="-1.4" width="8" height="2.8" rx="1.4" fill="#8B5FBF" transform="rotate(45)"></rect></g></svg>
+      <span style="font-size:12.5px; font-weight:800; color:#8B5FBF; letter-spacing:0.03em;">MediBloom</span>
+    </div>
+    <div style="font-size:11.5px; font-weight:800; color:#A79FB0; letter-spacing:0.06em; text-transform:uppercase; background:#F6F2FB; padding:6px 14px; border-radius:999px;">Appendix &middot; Data &amp; Method</div>
+  </div>
+
+  <div class="serif" style="font-size:38px; color:#2D2438; position:relative;">Why we chose rules over a trained model</div>
+  <div style="font-size:14px; color:#6B6377; font-weight:600; margin-top:6px; margin-bottom:24px; position:relative;">For a safety-critical checker, explainable beats clever.</div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px; position:relative; margin-bottom:20px;">
+
+    <div style="background:#FFFFFF; border:1px solid #F3EDF8; border-radius:20px; padding:22px;">
+      <div style="font-size:13px; font-weight:800; color:#8B5FBF; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:14px;">Where our data comes from</div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div style="width:6px; height:6px; border-radius:50%; background:#8B5FBF; margin-top:6px; flex-shrink:0;"></div>
+          <div style="font-size:13px; color:#2D2438; font-weight:700; line-height:1.5;">FDA openFDA <span style="color:#6B6377; font-weight:600;">&mdash; public drug label &amp; adverse-event data</span></div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div style="width:6px; height:6px; border-radius:50%; background:#8B5FBF; margin-top:6px; flex-shrink:0;"></div>
+          <div style="font-size:13px; color:#2D2438; font-weight:700; line-height:1.5;">NIH RxNorm <span style="color:#6B6377; font-weight:600;">&mdash; free generic/brand name normalization</span></div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div style="width:6px; height:6px; border-radius:50%; background:#8B5FBF; margin-top:6px; flex-shrink:0;"></div>
+          <div style="font-size:13px; color:#2D2438; font-weight:700; line-height:1.5;">Published clinical pharmacology references <span style="color:#6B6377; font-weight:600;">&mdash; well-established interactions only</span></div>
+        </div>
+      </div>
+      <div style="font-size:12px; color:#A79FB0; font-weight:600; margin-top:14px; font-style:italic;">All public, all free &mdash; hand-curated for accuracy, never scraped or guessed.</div>
+    </div>
+
+    <div style="background:#FFFFFF; border:1px solid #F3EDF8; border-radius:20px; padding:22px;">
+      <div style="font-size:13px; font-weight:800; color:#C0504E; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:14px;">Why not a trained model for safety checks</div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4EA37D" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><polyline points="4 12 9 17 20 6"></polyline></svg>
+          <div style="font-size:13px; color:#2D2438; font-weight:700; line-height:1.5;">Explainable &mdash; every warning traces to a documented rule</div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4EA37D" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><polyline points="4 12 9 17 20 6"></polyline></svg>
+          <div style="font-size:13px; color:#2D2438; font-weight:700; line-height:1.5;">Reliable offline &mdash; no weights, no inference cost, no hallucination risk</div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4EA37D" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><polyline points="4 12 9 17 20 6"></polyline></svg>
+          <div style="font-size:13px; color:#2D2438; font-weight:700; line-height:1.5;">Zero training data needed &mdash; no patient data collected, ever</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#F1EBF8; border-radius:18px; padding:18px 22px; position:relative;">
+    <div style="font-size:12px; font-weight:800; color:#8B5FBF; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:8px;">If we add personalization later</div>
+    <div style="font-size:13px; color:#4A4152; font-weight:600; line-height:1.6;">
+      Aggregated, anonymized on-device adherence patterns (never raw medical identity) &rarr; a small, interpretable model (decision rules or logistic regression &mdash; not a deep black box) &rarr; still runs entirely on-device, and still falls back to the rule engine whenever confidence is low.
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

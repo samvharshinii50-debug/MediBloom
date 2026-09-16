@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .app { font-family: 'Nunito', system-ui, sans-serif; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    input { font-family: 'Nunito', sans-serif; outline: none; }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+</helmet>
+
+<div class="app" style="width:390px; height:844px; background:#FDF8F6; position:relative; overflow:hidden; display:flex; flex-direction:column;">
+
+  <div style="display:flex; align-items:center; gap:12px; padding:18px 20px 6px 20px;">
+    <div style="width:34px; height:34px; border-radius:10px; background:#F6F2FB; display:flex; align-items:center; justify-content:center;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D2438" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </div>
+    <div class="serif" style="font-size:19px; color:#2D2438;">Review what we found</div>
+  </div>
+  <div style="font-size:12px; color:#A79FB0; font-weight:600; padding:0 20px; margin-bottom:14px;">Check everything before saving.</div>
+
+  <div style="padding:0 20px; margin-bottom:14px;">
+    <div style="display:flex; align-items:center; gap:8px; background:#F6F2FB; border-radius:12px; padding:10px 13px;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8B5FBF" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+      <span style="font-size:11.5px; font-weight:700; color:#2D2438;">sample_prescription.pdf</span>
+      <span style="font-size:10.5px; color:#A79FB0; font-weight:600;">&middot; 3 found</span>
+    </div>
+  </div>
+
+  <div style="flex:1; overflow:auto; padding:0 20px 16px 20px;">
+    <div style="display:flex; flex-direction:column; gap:10px;">
+
+      <div style="border:1.5px solid #F0E9F5; border-radius:15px; padding:13px;">
+        <div style="display:flex; align-items:center; gap:5px; background:#E8F7F0; color:#3F9270; font-size:10px; font-weight:800; padding:4px 9px; border-radius:999px; width:fit-content; margin-bottom:9px;">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3F9270" stroke-width="3"><polyline points="4 12 9 17 20 6"></polyline></svg>
+          Looks clear
+        </div>
+        <div style="font-size:13.5px; font-weight:800; color:#2D2438;">Amoxicillin</div>
+        <div style="font-size:11.5px; color:#6B6377; font-weight:600; margin-top:2px;">500 mg &middot; 3 times daily</div>
+      </div>
+
+      <div style="border:1.5px solid #F0E9F5; border-radius:15px; padding:13px;">
+        <div style="display:flex; align-items:center; gap:5px; background:#E8F7F0; color:#3F9270; font-size:10px; font-weight:800; padding:4px 9px; border-radius:999px; width:fit-content; margin-bottom:9px;">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3F9270" stroke-width="3"><polyline points="4 12 9 17 20 6"></polyline></svg>
+          Looks clear
+        </div>
+        <div style="font-size:13.5px; font-weight:800; color:#2D2438;">Metformin</div>
+        <div style="font-size:11.5px; color:#6B6377; font-weight:600; margin-top:2px;">500 mg &middot; twice daily</div>
+      </div>
+
+      <div style="border:1.5px solid #F3DDA8; background:#FFFDF8; border-radius:15px; padding:13px;">
+        <div style="display:flex; align-items:center; gap:5px; background:#FDF3E2; color:#B08328; font-size:10px; font-weight:800; padding:4px 9px; border-radius:999px; width:fit-content; margin-bottom:9px;">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#B08328" stroke-width="2.6"><path d="M12 4 2 20h20L12 4z"></path><line x1="12" y1="10" x2="12" y2="14.5"></line></svg>
+          Please check this
+        </div>
+        <input value="Ator&#8202;&#8202;statin?" style="width:100%; padding:9px 11px; border-radius:9px; border:1.5px solid #F3DDA8; background:#FDF3E2; font-size:13.5px; font-weight:700; color:#8A6A28; margin-bottom:10px;">
+        <div style="font-size:11px; color:#8A6A28; font-weight:700; margin-bottom:7px;">Hard to read &mdash; did you mean:</div>
+        <div style="display:flex; gap:6px; flex-wrap:wrap;">
+          <div style="padding:6px 12px; border-radius:999px; background:#2D2438; color:white; font-size:11px; font-weight:700;">Atorvastatin</div>
+          <div style="padding:6px 12px; border-radius:999px; background:#F6F2FB; color:#6B6377; font-size:11px; font-weight:700;">Atenolol</div>
+          <div style="padding:6px 12px; border-radius:999px; background:#F6F2FB; color:#6B6377; font-size:11px; font-weight:700;">Type it</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="padding:14px 20px 24px 20px; border-top:1px solid #F0E9F5;">
+    <button style="width:100%; border:none; background:linear-gradient(135deg,#E85D8A,#8B5FBF); color:white; font-family:'Nunito',sans-serif; font-weight:800; font-size:14.5px; padding:15px 0; border-radius:999px; box-shadow:0 10px 24px rgba(139,95,191,0.28);">Looks good, add these 3</button>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

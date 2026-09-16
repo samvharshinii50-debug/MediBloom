@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .app { font-family: 'Nunito', system-ui, sans-serif; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+</helmet>
+
+<div class="app" style="width:390px; height:844px; background:#FDF8F6; position:relative; overflow:hidden; display:flex; flex-direction:column;">
+
+  <div style="display:flex; align-items:center; gap:12px; padding:18px 20px 8px 20px;">
+    <div style="width:34px; height:34px; border-radius:10px; background:#F6F2FB; display:flex; align-items:center; justify-content:center;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D2438" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </div>
+    <div class="serif" style="font-size:19px; color:#2D2438;">Add from a prescription</div>
+  </div>
+  <div style="font-size:12px; color:#A79FB0; font-weight:600; padding:0 20px; margin-bottom:20px;">Reads it on your phone &mdash; nothing is uploaded anywhere.</div>
+
+  <div style="flex:1; padding:0 20px;">
+
+    <!-- camera primary -->
+    <div style="background:linear-gradient(160deg,#2D2438,#3A2E45); border-radius:20px; padding:26px 20px; text-align:center; margin-bottom:14px;">
+      <div style="width:64px; height:64px; border-radius:20px; background:rgba(255,255,255,0.12); display:flex; align-items:center; justify-content:center; margin:0 auto 14px auto;">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F4A6C1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3l2-3h6l2 3h3a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+      </div>
+      <div style="font-size:15px; font-weight:800; color:white; margin-bottom:4px;">Take a photo</div>
+      <div style="font-size:11.5px; color:#D9CDE4; font-weight:600;">Line the prescription up in good light</div>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+      <div style="flex:1; height:1px; background:#EDE6F2;"></div>
+      <span style="font-size:11px; color:#C7BFCF; font-weight:700;">or</span>
+      <div style="flex:1; height:1px; background:#EDE6F2;"></div>
+    </div>
+
+    <div style="border:2px dashed #D9CDE4; border-radius:18px; padding:20px; text-align:center; margin-bottom:16px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8B5FBF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:8px;"><path d="M7 18a4 4 0 0 1-1-7.9A5 5 0 0 1 16 9a4.5 4.5 0 0 1 1 8.9"></path><path d="M12 12v7"></path><polyline points="9 15 12 12 15 15"></polyline></svg>
+      <div style="font-size:13px; font-weight:800; color:#2D2438;">Choose a PDF or photo</div>
+      <div style="font-size:11px; color:#A79FB0; font-weight:600; margin-top:2px;">From your files or gallery</div>
+    </div>
+
+    <div style="display:flex; align-items:center; justify-content:center; gap:7px; margin-bottom:18px;">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#8B5FBF" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+      <span style="font-size:12.5px; color:#8B5FBF; font-weight:700; text-decoration:underline; text-decoration-color:#C9B6E4;">Try our sample prescription</span>
+    </div>
+
+    <div style="display:flex; gap:10px; background:#FDF9F5; border-radius:14px; padding:13px 15px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4A574" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:1px;"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="12"></line><circle cx="12" cy="16" r="0.5" fill="#D4A574"></circle></svg>
+      <div style="font-size:11.5px; color:#4A4152; font-weight:600; line-height:1.5;">Works best on typed or printed prescriptions. For handwriting, we'll show exactly what we read before saving anything.</div>
+    </div>
+
+  </div>
+
+  <div style="height:24px;"></div>
+
+</div>
+</x-dc>
+</body>
+</html>

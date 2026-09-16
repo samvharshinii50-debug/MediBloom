@@ -1,0 +1,29 @@
+{
+  "artboards": [
+    { "file": "HowItWorks.dc.html", "x": 0, "y": 0, "w": 1280, "h": 680, "title": "How It Works" },
+    { "file": "Main.dc.html", "x": 0, "y": 820, "w": 1280, "h": 980, "title": "Dashboard — Light" },
+    { "file": "DashboardDark.dc.html", "x": 1380, "y": 820, "w": 1280, "h": 980, "title": "Dashboard — Dark" },
+    { "file": "Wellness.dc.html", "x": 0, "y": 1940, "w": 1280, "h": 1020, "title": "Personal Wellness Dashboard" },
+    { "file": "Medications.dc.html", "x": 1380, "y": 1940, "w": 1280, "h": 920, "title": "Medications" },
+    { "file": "Interactions.dc.html", "x": 0, "y": 3100, "w": 1280, "h": 1100, "title": "Interactions" },
+    { "file": "AddMedication.dc.html", "x": 1380, "y": 3100, "w": 1280, "h": 900, "title": "Add Medication" },
+    { "file": "Assistant.dc.html", "x": 0, "y": 4340, "w": 1280, "h": 920, "title": "Ask MediBloom (Chat)" },
+    { "file": "ReminderPopup.dc.html", "x": 1380, "y": 4340, "w": 520, "h": 340, "title": "Reminder Popup" },
+    { "file": "AdherenceDashboard.dc.html", "x": 0, "y": 5400, "w": 1280, "h": 1040, "title": "Adherence Dashboard" },
+    { "file": "Settings.dc.html", "x": 1380, "y": 5400, "w": 1280, "h": 1480, "title": "Settings" },
+    { "file": "SafetyEthics.dc.html", "x": 0, "y": 7020, "w": 1280, "h": 1060, "title": "Safety & Ethics" },
+    { "file": "UploadPrescription.dc.html", "x": 0, "y": 8220, "w": 1280, "h": 920, "title": "Upload a Prescription" },
+    { "file": "ReviewExtracted.dc.html", "x": 1380, "y": 8220, "w": 1280, "h": 960, "title": "Review Extracted Medicines" }
+  ],
+  "annotations": [
+    { "id": "note-how", "x": 0, "y": -70, "w": 500, "text": "Start here — how the app thinks" },
+    { "id": "note-dashboard", "x": 0, "y": 750, "w": 500, "text": "Home — today's meds, warning banner, insight, today's plan" },
+    { "id": "note-wellness-meds", "x": 0, "y": 1870, "w": 500, "text": "Personal Wellness Dashboard + Medications list" },
+    { "id": "note-interactions", "x": 0, "y": 3030, "w": 500, "text": "Interaction checker with swap suggestions + Add Medicine" },
+    { "id": "note-assistant", "x": 0, "y": 4270, "w": 500, "text": "Chat assistant + the floating reminder popup" },
+    { "id": "note-adherence", "x": 0, "y": 5330, "w": 500, "text": "Adherence analytics + Settings (now with Caregiver Alerts + Voice)" },
+    { "id": "note-safety", "x": 0, "y": 6950, "w": 500, "text": "Safety & Ethics" },
+    { "id": "note-upload", "x": 0, "y": 8150, "w": 600, "text": "New: upload a prescription (PDF/photo), offline OCR, review before saving" }
+  ],
+  "launch": { "view": "canvas" }
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .app { font-family: 'Nunito', system-ui, sans-serif; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+</helmet>
+
+<div class="app" style="width:390px; height:844px; background:#FDF8F6; position:relative; overflow:hidden; display:flex; flex-direction:column;">
+
+  <div style="display:flex; align-items:center; gap:12px; padding:18px 20px 6px 20px;">
+    <div style="width:34px; height:34px; border-radius:10px; background:#F6F2FB; display:flex; align-items:center; justify-content:center;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D2438" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </div>
+    <div class="serif" style="font-size:19px; color:#2D2438;">Interactions</div>
+  </div>
+  <div style="font-size:11.5px; color:#A79FB0; font-weight:600; padding:0 20px; margin-bottom:14px;">Checked automatically, entirely on this device</div>
+
+  <div style="flex:1; overflow:auto; padding:0 20px 16px 20px;">
+
+    <div style="display:flex; align-items:center; gap:7px; margin-bottom:10px;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C0504E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 20h20L12 4z"></path><line x1="12" y1="10" x2="12" y2="14.5"></line></svg>
+      <span style="font-size:11px; font-weight:800; letter-spacing:0.03em; text-transform:uppercase; color:#C0504E;">Severe &middot; 1</span>
+    </div>
+
+    <div style="background:#FFFFFF; border:1px solid #F6C7C7; border-radius:16px; padding:15px; margin-bottom:16px;">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+          <span style="padding:5px 10px; border-radius:999px; background:#FCE8EE; color:#C2437C; font-size:11px; font-weight:800;">Warfarin</span>
+          <span style="padding:5px 10px; border-radius:999px; background:#FDEBEB; color:#C0504E; font-size:11px; font-weight:800;">Ibuprofen</span>
+        </div>
+        <span style="background:#F17C7C; color:white; font-size:9.5px; font-weight:800; padding:5px 9px; border-radius:999px; flex-shrink:0;">SEVERE</span>
+      </div>
+      <div style="font-size:12.5px; color:#4A4152; line-height:1.55; font-weight:600; margin-bottom:12px;">Both raise your bleeding risk. Together, they make stomach bleeding much more likely.</div>
+      <div style="display:flex; align-items:center; gap:8px; background:#FDF9F5; border-radius:12px; padding:10px 12px; flex-wrap:wrap;">
+        <span style="font-size:11px; padding:5px 10px; border-radius:999px; background:#FDEBEB; color:#C0504E; font-weight:800;">Ibuprofen</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#D4A574" stroke-width="2.6"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+        <span style="font-size:11px; padding:5px 10px; border-radius:999px; background:#E8F7F0; color:#3F9270; font-weight:800;">Acetaminophen</span>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:7px; margin-bottom:10px;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B08328" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 20h20L12 4z"></path><line x1="12" y1="10" x2="12" y2="14.5"></line></svg>
+      <span style="font-size:11px; font-weight:800; letter-spacing:0.03em; text-transform:uppercase; color:#B08328;">Moderate &middot; 1</span>
+    </div>
+
+    <div style="background:#FFFFFF; border:1px solid #F3DDA8; border-radius:16px; padding:15px;">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+          <span style="padding:5px 10px; border-radius:999px; background:#FDF3E2; color:#B08328; font-size:11px; font-weight:800;">Sertraline</span>
+          <span style="padding:5px 10px; border-radius:999px; background:#FDEBEB; color:#C0504E; font-size:11px; font-weight:800;">Ibuprofen</span>
+        </div>
+        <span style="background:#F5C56B; color:#5C4213; font-size:9.5px; font-weight:800; padding:5px 9px; border-radius:999px; flex-shrink:0;">MODERATE</span>
+      </div>
+      <div style="font-size:12.5px; color:#4A4152; line-height:1.55; font-weight:600;">Can also raise bleeding risk, especially in your stomach. Watch for bruising.</div>
+    </div>
+
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

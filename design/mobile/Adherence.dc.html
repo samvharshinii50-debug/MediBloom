@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .app { font-family: 'Nunito', system-ui, sans-serif; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+</helmet>
+
+<div class="app" style="width:390px; height:844px; background:#FDF8F6; position:relative; overflow:hidden; display:flex; flex-direction:column;">
+
+  <div style="display:flex; align-items:center; gap:12px; padding:18px 20px 14px 20px;">
+    <div style="width:34px; height:34px; border-radius:10px; background:#F6F2FB; display:flex; align-items:center; justify-content:center;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D2438" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </div>
+    <div class="serif" style="font-size:19px; color:#2D2438;">Your Adherence</div>
+  </div>
+
+  <div style="flex:1; overflow:auto; padding:0 20px 20px 20px;">
+
+    <div style="display:flex; gap:10px; margin-bottom:14px;">
+      <div style="flex:1; background:#FFFFFF; border-radius:15px; padding:14px; border:1px solid #F3EDF8;">
+        <div style="font-size:10.5px; color:#A79FB0; font-weight:700; margin-bottom:6px;">Streak</div>
+        <div class="serif" style="font-size:22px; color:#2D2438;">12d</div>
+      </div>
+      <div style="flex:1; background:#FFFFFF; border-radius:15px; padding:14px; border:1px solid #F3EDF8;">
+        <div style="font-size:10.5px; color:#A79FB0; font-weight:700; margin-bottom:6px;">Adherence</div>
+        <div class="serif" style="font-size:22px; color:#2D2438;">91%</div>
+      </div>
+      <div style="flex:1; background:#FFFFFF; border-radius:15px; padding:14px; border:1px solid #F3EDF8;">
+        <div style="font-size:10.5px; color:#A79FB0; font-weight:700; margin-bottom:6px;">This week</div>
+        <div class="serif" style="font-size:22px; color:#2D2438;">27/30</div>
+      </div>
+    </div>
+
+    <div style="background:#FFFFFF; border-radius:18px; padding:16px; border:1px solid #F3EDF8; margin-bottom:14px;">
+      <div style="font-size:13px; font-weight:800; color:#2D2438; margin-bottom:12px;">Last 4 weeks</div>
+      <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:5px; height:100px;">
+        <div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#F5C56B; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#EDE6F2; border-radius:5px;"></div>
+        <div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#F17C7C; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#EDE6F2; border-radius:5px;"></div>
+        <div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#F5C56B; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#EDE6F2; border-radius:5px;"></div>
+        <div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#8FD4B8; border-radius:5px;"></div><div style="background:#F5F0E4; border:1.5px dashed #E3D9C3; border-radius:5px;"></div><div style="background:#F5F0E4; border:1.5px dashed #E3D9C3; border-radius:5px;"></div>
+      </div>
+      <div style="display:flex; gap:12px; margin-top:12px;">
+        <div style="display:flex; align-items:center; gap:5px;"><span style="width:8px; height:8px; border-radius:2px; background:#8FD4B8; display:inline-block;"></span><span style="font-size:10px; color:#A79FB0; font-weight:700;">Taken</span></div>
+        <div style="display:flex; align-items:center; gap:5px;"><span style="width:8px; height:8px; border-radius:2px; background:#F5C56B; display:inline-block;"></span><span style="font-size:10px; color:#A79FB0; font-weight:700;">Skipped</span></div>
+        <div style="display:flex; align-items:center; gap:5px;"><span style="width:8px; height:8px; border-radius:2px; background:#F17C7C; display:inline-block;"></span><span style="font-size:10px; color:#A79FB0; font-weight:700;">Missed</span></div>
+      </div>
+    </div>
+
+    <div style="background:#FFFFFF; border-radius:18px; padding:16px; border:1px solid #F3EDF8;">
+      <div style="font-size:13px; font-weight:800; color:#2D2438; margin-bottom:12px;">By medicine</div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div style="width:70px; font-size:11.5px; font-weight:700; color:#2D2438;">Warfarin</div>
+          <div style="flex:1; height:7px; border-radius:999px; background:#F6F2FB;"><div style="width:97%; height:100%; background:#E85D8A; border-radius:999px;"></div></div>
+          <div style="width:32px; text-align:right; font-size:11px; font-weight:800; color:#2D2438;">97%</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div style="width:70px; font-size:11.5px; font-weight:700; color:#2D2438;">Metformin</div>
+          <div style="flex:1; height:7px; border-radius:999px; background:#F6F2FB;"><div style="width:88%; height:100%; background:#8B5FBF; border-radius:999px;"></div></div>
+          <div style="width:32px; text-align:right; font-size:11px; font-weight:800; color:#2D2438;">88%</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div style="width:70px; font-size:11.5px; font-weight:700; color:#2D2438;">Sertraline</div>
+          <div style="flex:1; height:7px; border-radius:999px; background:#F6F2FB;"><div style="width:78%; height:100%; background:#D4A574; border-radius:999px;"></div></div>
+          <div style="width:32px; text-align:right; font-size:11px; font-weight:800; color:#2D2438;">78%</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
