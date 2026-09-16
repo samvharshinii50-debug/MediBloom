@@ -437,7 +437,7 @@ and the assistant's factual answers are all above the line.
 
 ---
 
-## 12. Honest limitations — say these before a judge finds them
+## 12. Honest limitations
 
 1. **The dataset is not certified.** 134 hand-written rules. It needs pharmacist
    review before real patients, and it skews severe.
