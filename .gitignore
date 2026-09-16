@@ -34,3 +34,7 @@ Thumbs.db
 
 # superseded deck from the Windows-era design — kept on disk, not published
 MediBloom-Pitch-Deck.pptx
+
+# pitch deck and standalone doc — kept on disk for judges, not published to the repo
+MediBloom-Pitch.pptx
+MediBloom-Documentation.pdf
